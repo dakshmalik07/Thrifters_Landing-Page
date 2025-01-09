@@ -1,8 +1,6 @@
 // components/ui/join-waitlist-section.tsx
 
 import React from "react";
-
-
 import { Spotlight } from "./ui/spotlight";
 import { PlaceholdersAndVanishInput } from "./ui/placeholders-and-vanish-input";
 

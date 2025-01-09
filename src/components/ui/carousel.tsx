@@ -1,9 +1,8 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
-import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import Image, { ImageProps } from "next/image";
+import Image from "next/image";
 
 interface CarouselProps {
   items: { src: string; alt: string }[]; // Array of image objects with src and alt

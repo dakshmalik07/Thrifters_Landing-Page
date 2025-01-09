@@ -1,22 +1,12 @@
 "use client";
 
-import React, { useRef, useState,useMemo,useEffect } from "react";
+import React, { useRef, useState,useMemo} from "react";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { Menu, MenuItem } from "@/components/ui/navbar-menu";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
-import Image from "next/image";
-import { Cover } from "@/components/ui/cover";
-import {WorldMap} from "@/components/ui/world-map";
-import{ CustomCardStack }  from "@/components/ui/features-section";
-import { motion } from "motion/react";
- import { Carousel } from "@/components/ui/carousel";
-import { SparklesCore } from "@/components/ui/fuckheadline";
 import { FeaturesSection } from "@/components/features-section";
 import { CarouselSection } from "@/components/carousel-section";
 import { ShopSecondHandSection } from "@/components/shopSecond-hand-section";
 import { HeroSection } from "@/components/hero-section";
-import { Spotlight } from "@/components/ui/spotlight";
-import { PlaceholdersAndVanishInput } from "@/components/ui/placeholders-and-vanish-input";
 import { WaitingList } from "@/components/waiting-list";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { db } from "@/lib/firebaseConfig";
@@ -25,7 +15,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { CountdownTimer } from "@/components/CountdownTimer";
 
-import { GlobalStyles } from "@/components/CountdownTimer";
+
 
 export default function Home() {
 
