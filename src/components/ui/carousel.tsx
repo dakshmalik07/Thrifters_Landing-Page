@@ -54,7 +54,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.2 * index } }}
-              className="flex-shrink-0 w-56 md:w-96 h-80 rounded-lg overflow-hidden"
+              className="flex-shrink-0 w-full sm:w-72 md:w-96 lg:w-96 h-80 rounded-lg overflow-hidden"
             >
               <Image
                 src={item.src}

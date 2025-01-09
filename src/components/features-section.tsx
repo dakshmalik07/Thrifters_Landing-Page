@@ -41,7 +41,7 @@ export const FeaturesSection = () => {
                  <CardBody className="bg-gray-50 group/card dark:bg-black border w-72 rounded-xl p-6">
                    <CardItem
                      translateZ="50"
-                     className="text-xl font-bold text-neutral-600 dark:text-white"
+                     className="text-xl font-bold text-neutral-600 dark:text-white "
                    >
                      Thrift & Drip Accessories
                    </CardItem>
@@ -68,7 +68,7 @@ export const FeaturesSection = () => {
                  <CardBody className="bg-gray-50 group/card dark:bg-black border w-72 rounded-xl p-6">
                    <CardItem
                      translateZ="50"
-                     className="text-xl font-bold text-neutral-600 dark:text-white"
+                     className="text-xl font-bold text-neutral-600 dark:text-white "
                    >
                      Connect Buyers & Sellers
                    </CardItem>

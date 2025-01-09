@@ -26,7 +26,7 @@ const SHOP_SECOND_HAND_CARDS = [
 
 export const ShopSecondHandSection = () => {
   return (
-    <div className="w-full mt-10 bg-gray-100 pb-8">
+    <div className="w-full  mt-10 bg-gray-100 pb-8">
       <h2 className="text-4xl font-extrabold italic text-center text-gray-800 dark:text-black mb-6">
         Why Shop Second Hand?
       </h2>

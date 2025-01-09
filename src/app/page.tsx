@@ -8,7 +8,7 @@ import { CarouselSection } from "@/components/carousel-section";
 import { ShopSecondHandSection } from "@/components/shopSecond-hand-section";
 import { HeroSection } from "@/components/hero-section";
 import { WaitingList } from "@/components/waiting-list";
-import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import { TypewriterEffect,TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { db } from "@/lib/firebaseConfig";
 import { collection,addDoc } from "firebase/firestore";
 import { ToastContainer, toast } from "react-toastify";
@@ -104,11 +104,11 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   
 
   return (
-    <div>
+    <div className="relative bg-black h-screen sm:h-full md:h-auto overflow-x-hidden sm:overflow-x-hidden md:overflow-x-visible">
        {/* Toast Container */}
        <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} />
       {/* Background Animation */}
-      <BackgroundLines  className="w-full overflow-x-hidden relative ">
+      <BackgroundLines  className="w-full relative sm:h-full md:h-[100vh]">
         {/* Navbar */}
         <div className="relative w-full flex items-center justify-center">
         <Menu setActive={setActive}  >
@@ -133,9 +133,6 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                 </p>
               </div>
             </MenuItem>
-
-
-
         </Menu>
        </div>
 
@@ -146,19 +143,19 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   <ShopSecondHandSection/>
 </div>
 
-<div>
+
+<div className="bg-black">
 <CarouselSection />
 </div>
 
         {/* Features Section */}
 
-        <div ref={featuresRef}>
+      <div ref={featuresRef} >
         
-     
-      <TypewriterEffectSmooth  className="flex items-center justify-center" words={words} />
+      <TypewriterEffectSmooth  className="flex items-center justify-center " words={words} />
 
           <FeaturesSection />
-        </div>
+      </div>
 
      
      <div ref={waitingListRef} className="pt-10">
